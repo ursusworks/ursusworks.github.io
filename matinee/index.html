@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matinee — support</title>
+<style>
+:root { color-scheme: dark; --bg: #0b0d0c; --card: #161a18; --text: #eef2ef; --muted: #a3aca6; --accent: #2bb52b; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+header img { width: 56px; height: 56px; border-radius: 12px; }
+header a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 22px; }
+nav { display: flex; gap: 18px; flex-wrap: wrap; margin: -12px 0 32px; }
+nav a { color: var(--muted); }
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 16px; }
+h2 { font-size: 22px; margin: 36px 0 8px; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+p { overflow-wrap: anywhere; }
+.card { background: var(--card); border-radius: 14px; padding: 20px 24px; margin: 20px 0; }
+.muted { color: var(--muted); font-size: 15px; }
+code { background: #222826; padding: 1px 6px; border-radius: 4px; font-size: 15px; word-break: break-all; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; } td, th { text-align: left; padding: 8px 10px; border-bottom: 1px solid #262c29; vertical-align: top; }
+</style></head>
+<body><main>
+<header><img src="../matinee/logo.png" alt=""><a href="./">Matinee</a></header>
+<nav><a href="./">Support</a><a href="privacy.html">Privacy policy</a><a href="source.html">Open-source code</a></nav>
+
+<h1>Matinee</h1>
+<p>Matinee is an Emby client for Xbox Series X|S. It plays the movies and shows on your own Emby server, and can show what Sonarr and Radarr have coming up.</p>
+<div class="card"><h2 style="margin-top:0">Support</h2>
+<p>Email <a href="mailto:ursusworks@outlook.com">ursusworks@outlook.com</a>. Please include your Matinee version (Settings → About), your Emby server version, and what you were doing when the problem happened.</p></div>
+<h2>Common questions</h2>
+<p><strong>Do I need an Emby server?</strong> Yes. Matinee is a client: it doesn't come with any content, and it doesn't work with other media servers.</p>
+<p><strong>Matinee can't find my server.</strong> Enter its address on the first screen, e.g. <code>192.168.1.20:8096</code>. The console and the server must be on the same network, or the server must be reachable from it.</p>
+<p><strong>Sonarr / Radarr won't connect.</strong> Enter the address in Settings → Sonarr &amp; Radarr. Matinee reads the API key itself if Sonarr/Radarr allow local access without a login ("Disabled for local addresses"); otherwise paste the key from their Settings → General.</p>
+<p><strong>A video won't play or keeps buffering.</strong> Lower Settings → Playback → Maximum streaming quality, or check that your Emby server can transcode.</p>
+<h2>Legal</h2>
+<p><a href="privacy.html">Privacy policy</a> · <a href="source.html">Open-source components and source code</a></p>
+<p class="muted">Emby is a trademark of Emby LLC. Xbox, Windows and Microsoft Edge are trademarks of the Microsoft group of companies. Sonarr and Radarr are the names of their respective open-source projects. FFmpeg is a trademark of Fabrice Bellard. All other names and marks belong to their owners. Matinee is an independent app. It is not affiliated with, sponsored or endorsed by Emby LLC, Microsoft, the Sonarr or Radarr projects, The Movie Database (TMDB) or TheTVDB. Metadata and artwork come from your own servers and the services they use.</p>
+
+<p class="muted" style="margin-top:48px">© 2026 Bjørn Karlsen · <a href="mailto:ursusworks@outlook.com">ursusworks@outlook.com</a></p>
+</main></body></html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matinee — open-source code</title>
+<style>
+:root { color-scheme: dark; --bg: #0b0d0c; --card: #161a18; --text: #eef2ef; --muted: #a3aca6; --accent: #2bb52b; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+header img { width: 56px; height: 56px; border-radius: 12px; }
+header a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 22px; }
+nav { display: flex; gap: 18px; flex-wrap: wrap; margin: -12px 0 32px; }
+nav a { color: var(--muted); }
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 16px; }
+h2 { font-size: 22px; margin: 36px 0 8px; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+p { overflow-wrap: anywhere; }
+.card { background: var(--card); border-radius: 14px; padding: 20px 24px; margin: 20px 0; }
+.muted { color: var(--muted); font-size: 15px; }
+code { background: #222826; padding: 1px 6px; border-radius: 4px; font-size: 15px; word-break: break-all; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; } td, th { text-align: left; padding: 8px 10px; border-bottom: 1px solid #262c29; vertical-align: top; }
+</style></head>
+<body><main>
+<header><img src="../matinee/logo.png" alt=""><a href="./">Matinee</a></header>
+<nav><a href="./">Support</a><a href="privacy.html">Privacy policy</a><a href="source.html">Open-source code</a></nav>
+
+<h1>Open-source components</h1>
+<p>Matinee itself is closed source. It includes the open-source components below, under their own licences; their full licence texts are in the app under Settings → About → Licenses.</p>
+<table><tr><th>Component</th><th>Licence</th><th>Source</th></tr>
+<tr><td>FFmpeg 8.1 (FFmpegInteropX build 8.1.2)</td><td>LGPL-2.1-or-later</td><td><a href="https://git.ffmpeg.org/gitweb/ffmpeg.git/commit/38b88335f99e76ed89ff3c93f877fdefce736c13">git.ffmpeg.org/gitweb/ffmpeg.git/commit/38b88335f99e76ed89ff…</a></td></tr>
+<tr><td>libiconv</td><td>LGPL-2.0-or-later</td><td><a href="https://ftp.gnu.org/pub/gnu/libiconv/">ftp.gnu.org/pub/gnu/libiconv/</a></td></tr>
+<tr><td>liblzma (XZ Utils)</td><td>As distributed with the FFmpeg build (text below)</td><td><a href="https://github.com/tukaani-project/xz">github.com/tukaani-project/xz</a></td></tr>
+<tr><td>dav1d</td><td>BSD-2-Clause</td><td><a href="https://code.videolan.org/videolan/dav1d">code.videolan.org/videolan/dav1d</a></td></tr>
+<tr><td>OpenSSL</td><td>Apache-2.0</td><td><a href="https://github.com/openssl/openssl">github.com/openssl/openssl</a></td></tr>
+<tr><td>zlib</td><td>Zlib</td><td><a href="https://zlib.net">zlib.net</a></td></tr>
+<tr><td>bzip2</td><td>bzip2-1.0.6</td><td><a href="https://sourceware.org/bzip2/">sourceware.org/bzip2/</a></td></tr>
+<tr><td>libxml2</td><td>MIT</td><td><a href="https://gitlab.gnome.org/GNOME/libxml2">gitlab.gnome.org/GNOME/libxml2</a></td></tr>
+<tr><td>FFmpegInteropX 2.1.0.81200</td><td>Apache-2.0</td><td><a href="https://github.com/ffmpeginteropx/FFmpegInteropX/tree/841fc8e79346a235906f1dbd45be53034b2e2f52">github.com/ffmpeginteropx/FFmpegInteropX/tree/841fc8e79346a2…</a></td></tr>
+<tr><td>.NET runtime 10.0</td><td>MIT</td><td><a href="https://github.com/dotnet/runtime">github.com/dotnet/runtime</a></td></tr>
+<tr><td>C#/WinRT 2.2.0</td><td>MIT</td><td><a href="https://github.com/microsoft/CsWinRT">github.com/microsoft/CsWinRT</a></td></tr>
+<tr><td>Microsoft Edge WebView2 SDK 1.0.3179.45</td><td>BSD-3-Clause (Microsoft)</td><td><a href="https://www.nuget.org/packages/Microsoft.Web.WebView2">www.nuget.org/packages/Microsoft.Web.WebView2</a></td></tr>
+<tr><td>Windows UI Library (WinUI 2) 2.8.7</td><td>Microsoft Software License Terms</td><td><a href="https://github.com/microsoft/microsoft-ui-xaml">github.com/microsoft/microsoft-ui-xaml</a></td></tr>
+</table>
+<h2>LGPL libraries (FFmpeg and its libraries)</h2>
+<p>FFmpeg, libiconv, liblzma (XZ Utils) are used under the GNU Lesser General Public License, as unmodified libraries in separate DLLs that Matinee links to dynamically. You may modify them and use your modified versions with Matinee, and reverse-engineer Matinee as far as needed to debug such modifications.</p>
+<p>The complete corresponding source code is available at the links above. Unmodified FFmpeg libraries (avcodec, avformat, avutil, avfilter, avdevice, swresample, swscale), built from FFmpeg commit 38b88335f99e with the build scripts of FFmpegInteropX (https://github.com/ffmpeginteropx/FFmpegInteropX/tree/841fc8e79346a235906f1dbd45be53034b2e2f52/Build) and shipped as separate DLLs that Matinee links to dynamically.</p>
+<div class="card"><strong>Written offer.</strong> For three years from the last time a version of Matinee was distributed, Bjørn Karlsen will give anyone a copy of the complete corresponding source code of the LGPL libraries in that version, on request to <a href="mailto:ursusworks@outlook.com">ursusworks@outlook.com</a>, for no more than the cost of providing it.</div>
+
+<p class="muted" style="margin-top:48px">© 2026 Bjørn Karlsen · <a href="mailto:ursusworks@outlook.com">ursusworks@outlook.com</a></p>
+</main></body></html>
