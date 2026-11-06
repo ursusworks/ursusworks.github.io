@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matinee — roadmap</title>
+<style>
+:root { color-scheme: dark; --bg: #0b0d0c; --card: #161a18; --text: #eef2ef; --muted: #a3aca6; --accent: #2bb52b; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+header img { width: 56px; height: 56px; border-radius: 12px; }
+header a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 22px; }
+nav { display: flex; gap: 18px; flex-wrap: wrap; margin: -12px 0 32px; }
+nav a { color: var(--muted); }
+h1 { font-size: 34px; line-height: 1.2; margin: 0 0 16px; }
+h2 { font-size: 22px; margin: 36px 0 8px; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+p { overflow-wrap: anywhere; }
+.card { background: var(--card); border-radius: 14px; padding: 20px 24px; margin: 20px 0; }
+.muted { color: var(--muted); font-size: 15px; }
+code { background: #222826; padding: 1px 6px; border-radius: 4px; font-size: 15px; word-break: break-all; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; } td, th { text-align: left; padding: 8px 10px; border-bottom: 1px solid #262c29; vertical-align: top; }
+</style></head>
+<body><main>
+<header><img src="../matinee/logo.png" alt=""><a href="./">Matinee</a></header>
+<nav><a href="./">Support</a><a href="roadmap.html">Roadmap</a><a href="privacy.html">Privacy policy</a><a href="source.html">Open-source code</a></nav>
+
+<h1>Roadmap</h1>
+<p>What's planned for Matinee. This is a guide, not a promise: there are no dates, and plans can change.</p>
+<h2>Planned next</h2>
+<p><strong>Control Matinee from your phone.</strong> Pick Matinee as a "Play on" target in the Emby app, and start or control playback from there.</p>
+<p><strong>Music.</strong> Album and artist pages, a Now Playing screen, and music that keeps playing when you leave the app. Background playback has strict memory limits on Xbox, so this depends on testing on the console first.</p>
+<p><strong>Live TV guide.</strong> A programme guide, and changing channel from inside the player.</p>
+<h2>Later</h2>
+<p><strong>Collections and playlists.</strong> Proper pages for both, with Play all.</p>
+<p><strong>Easier sign-in and users.</strong> Sign in with Emby Connect or a PIN, and switch user without signing out.</p>
+<p><strong>Series pages from Sonarr.</strong> Open a show that's in Sonarr but not in Emby yet, like upcoming movies from Radarr today.</p>
+<p><strong>Styled subtitles.</strong> ASS/SSA subtitles with their original fonts and positioning.</p>
+<p><strong>Trailers on Home.</strong> Muted trailers in the spotlight.</p>
+<p><strong>More languages.</strong> Matinee is English only today.</p>
+<h2>Being looked into</h2>
+<p><strong>Lossless surround passthrough.</strong> Sending Dolby TrueHD/Atmos and DTS:X untouched to an AV receiver. Today Dolby Digital and Dolby Digital Plus are passed through, and TrueHD is decoded to multichannel PCM. It may not be possible for an app on Xbox.</p>
+<h2>Recently added</h2>
+<p><strong>1.0.</strong> Preview pictures while seeking, faster and lighter browsing, and a support site.</p>
+<p><strong>0.8.</strong> A–Z jump and more filters in libraries.</p>
+<p><strong>0.7.</strong> A Licenses page, and a couple of seasonal surprises.</p>
+<p><strong>0.6.</strong> Sonarr's missing and upcoming episodes on series pages, and movie pages from Radarr.</p>
+<p><strong>0.5.</strong> Intro and credits on the timeline, and an Up next countdown.</p>
+<div class="card">Missing something? <a href="https://github.com/ursusworks/matinee-issues/issues/new/choose">Suggest a feature</a> on the issue tracker.</div>
+
+<p class="muted" style="margin-top:48px">© 2026 Ursusworks</p>
+</main></body></html>
